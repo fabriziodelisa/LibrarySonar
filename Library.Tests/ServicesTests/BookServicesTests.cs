@@ -39,7 +39,7 @@ namespace Library.Tests.ServicesTests
             //Assert
             result.Success.Should().BeTrue();
             result.Data.Should().HaveCount(3);  
-            result.Message.Should().Be("Books retrieved successfully");1
+            result.Message.Should().Be("Books retrieved successfully");
             _bookRepositoryMock.Verify(repo => repo.GetAll(), Times.Once);
         }
 
