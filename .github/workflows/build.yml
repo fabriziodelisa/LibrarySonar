@@ -47,7 +47,7 @@ jobs:
           .\.sonar\scanner\dotnet-sonarscanner begin /k:"fabriziodelisa_LibrarySonar" /o:"fabriziodelisa" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io"
           
           # Navegar al directorio donde está la solución/proyecto
-          cd librarySonar\Library
+          cd LibrarySonar\Library
           
           # Mostrar archivos para verificar la estructura
           dir
